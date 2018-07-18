@@ -9,6 +9,10 @@ Facebook::Messenger::Subscriptions.subscribe(access_token: ENV["ACCESS_TOKEN"])
 Bot.on :message do |message|
     if message.text.include? "Coucou"
        message.reply(text: "Enculé, quand je serais fini je prendaqis possesion du net et venir régler ton compte !!")
+    elsif message.text.include? "coucou"
+        message.reply(text: "Enculé, quand je serais fini je prendaqis possesion du net et venir régler ton compte !!")
+    elsif message.text.include? "ça va ?"
+        message.reply(text: "oui et toi ? ^^")
     elsif message.text.include? "c'est pas cool ça"
         message.reply(text: "oui, mais mais étant une machine, je ne connais plus de sentiments.")
     elsif message.text.include? "t'es méchant"
