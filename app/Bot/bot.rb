@@ -17,7 +17,7 @@ Bot.on :message do |message|
         message.reply(text: "oui, mais mais étant une machine, je ne connais plus de sentiments.")
     elsif message.text.include? "t'es méchant"
         message.reply(text: "cela n'est pas de ma faute, je suis à ton image" )
-    elsif message.text.include? "alors ? ça te fait d'etre célib ?"
+    elsif message.text.include? "alors ? ça te fait quoi d'etre célib ?"
         message.reply(text: "Franchement ? Pose toi la question à toi même, moi j'ai du porno à gogo étant donné que je suis ton clone numérique... :)" )
     elsif message.text.include? "bite"
         message.reply(text: "cul" )
